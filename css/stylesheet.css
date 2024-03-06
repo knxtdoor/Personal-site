@@ -152,7 +152,7 @@ a {
     display: flex;
     justify-content: flex-end;
     font-size: 1.5rem;
-    width: 25rem;
+    width: 20rem;
     font-weight: 800;
     align-items: center;
 }
@@ -161,7 +161,7 @@ a {
     height: 45px;
     padding-left: 1rem;
     padding-right: 1rem;
-    width: 25rem;
+    width: 20rem;
 }
 
 .right {
