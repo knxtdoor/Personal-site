@@ -9,7 +9,6 @@ div>div,
 div>span,
 div>img {
     background-color: inherit;
-
 }
 
 a {
@@ -83,7 +82,7 @@ a {
 }
 
 #pfp {
-    height: 25rem;
+    /* height: 28rem; */
 }
 
 #intro {
@@ -95,8 +94,11 @@ a {
     display: flex;
     width: 70vw;
     justify-content: center;
-    /* border: 2px solid black; */
+    border: 4px solid #888888;
     margin: 2rem;
+    /* box-shadow: 5px 5px #888888; */
+    height:50%;
+    overflow:hidden;
 }
 
 #intro-box,
@@ -216,4 +218,20 @@ rect.right {
     padding-left: 2rem;
     padding-right: 2rem;
     font-weight: 700;
+}
+
+.transparent{
+    opacity: .8;
+}
+.solid{
+    opacity: 1;
+}
+.transparent-bg-color{
+    background-color: #d7e0e0a0;
+}
+#about-section{
+    background-image: url("../images/GTNorthAve.jpg");
+    /* background-color: rgba(0,0,0,150); */
+    background-repeat: round;
+    z-index: -1;
 }
