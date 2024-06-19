@@ -82,9 +82,6 @@ a {
     font-size: 3rem;
 }
 
-#pfp {
-    /* height: 28rem; */
-}
 
 #intro {
     font-size: 1.5rem;
@@ -238,3 +235,30 @@ rect.right {
 .logo-link>svg:hover{
     fill: #0072b1;
 }
+
+#scroll-arrow{
+    position: absolute;
+    bottom:10px;
+    width:3rem;
+    background-color: #00000000;
+    animation-name: jiggle;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+    /* left:40vw; */
+}
+
+.fade-out{
+    transition: 1s;
+    opacity:1;
+}
+.fade-out.faded{
+    opacity:0;
+}
+
+@keyframes jiggle {
+    0% {bottom:0px}
+    50%{bottom:10px}
+    100%{bottom:0px}
+}
+
