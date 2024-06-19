@@ -32,7 +32,8 @@ a {
 }
 
 .list-container {
-    width: 100%;
+    /* width: 100%; */
+    min-width:35vw;
 }
 
 .list-item {
@@ -220,18 +221,20 @@ rect.right {
     font-weight: 700;
 }
 
-.transparent{
-    opacity: .8;
-}
-.solid{
-    opacity: 1;
-}
 .transparent-bg-color{
     background-color: #d7e0e0a0;
 }
 #about-section{
     background-image: url("../images/GTNorthAve.jpg");
     /* background-color: rgba(0,0,0,150); */
-    background-repeat: round;
+    background-size:cover;
     z-index: -1;
+}
+
+.small-padding{
+    padding:1em;
+}
+
+.logo-link>svg:hover{
+    fill: #0072b1;
 }
