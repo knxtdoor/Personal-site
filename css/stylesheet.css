@@ -67,7 +67,10 @@ a {
 .alternate:nth-child(odd) * {
     background-color: #d0dbdb;
 }
-
+.dark,
+.dark *{
+    background-color: #d0dbdb;
+}
 .right {
     text-align: right
 }
@@ -82,21 +85,31 @@ a {
     font-size: 3rem;
 }
 
+#pfp{
+    /* width:30%; */
+    flex-grow: 0;
+    max-width: 30rem;
 
+}
 #intro {
     font-size: 1.5rem;
     padding: 10px;
+    /* width:40%; */
+    /* flex-grow: 1; */
+
 }
 
 #intro-box {
     display: flex;
+    flex-wrap: wrap;
+    flex-grow: 0;
     width: 70vw;
-    justify-content: center;
+    justify-content: space-between;
     border: 4px solid #888888;
     margin: 2rem;
     /* box-shadow: 5px 5px #888888; */
-    height:50%;
-    overflow:hidden;
+    /* height:50%; */
+    /* overflow:hidden; */
 }
 
 #intro-box,
@@ -137,7 +150,7 @@ a {
 
 
 #about-section {
-    height: 105vh;
+    /* min-height: 105vh; */
 }
 
 .separate {
@@ -146,6 +159,9 @@ a {
     justify-content: space-between;
     padding-top: 3rem;
     padding-bottom: 3rem;
+}
+.justify-center{
+    justify-content: center;
 }
 
 .skill {
@@ -240,6 +256,7 @@ rect.right {
     position: absolute;
     bottom:10px;
     width:3rem;
+    left:calc(50vw - 1.5rem);
     background-color: #00000000;
     animation-name: jiggle;
     animation-duration: 2s;
@@ -256,6 +273,9 @@ rect.right {
     opacity:0;
 }
 
+.grow{
+    flex-grow: 1;
+}
 @keyframes jiggle {
     0% {bottom:0px}
     50%{bottom:10px}
