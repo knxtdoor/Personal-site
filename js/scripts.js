@@ -1,3 +1,17 @@
+function jobDurations() {
+    durationObjs = [...document.getElementsByClassName("dynamic-duration")];
+    console.log("durationObjs:", durationObjs);
+    currentYear = new Date().getFullYear();
+    durationObjs.forEach((duration) => {
+        console.log("duration:", duration);
+        startYear = parseInt(duration.getAttribute("startYear"));
+        console.log("startYear", startYear);
+        length = currentYear - startYear;
+        console.log("length:", length);
+        duration.innerText = `${length} years`;
+    });
+}
+
 function observerStuff() {
     const slideIntoViewport = (item, observer) => {
         let listItems = [...document.getElementsByClassName("slide")];
@@ -111,3 +125,4 @@ function rgbToHex(r, g, b) {
 }
 skillBars();
 observerStuff();
+jobDurations();
